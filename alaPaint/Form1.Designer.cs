@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.czarny = new System.Windows.Forms.PictureBox();
+            this.wybrany = new System.Windows.Forms.PictureBox();
             this.bialy = new System.Windows.Forms.PictureBox();
             this.niebieski = new System.Windows.Forms.PictureBox();
             this.czerwony = new System.Windows.Forms.PictureBox();
@@ -39,8 +39,9 @@
             this.rozowy = new System.Windows.Forms.PictureBox();
             this.pomaranczowy = new System.Windows.Forms.PictureBox();
             this.fioletowy = new System.Windows.Forms.PictureBox();
+            this.czarny = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.czarny)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wybrany)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bialy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.niebieski)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.czerwony)).BeginInit();
@@ -50,12 +51,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.rozowy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pomaranczowy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fioletowy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.czarny)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.czarny);
             this.panel1.Controls.Add(this.pomaranczowy);
             this.panel1.Controls.Add(this.brozowy);
             this.panel1.Controls.Add(this.fioletowy);
@@ -65,34 +68,35 @@
             this.panel1.Controls.Add(this.niebieski);
             this.panel1.Controls.Add(this.bialy);
             this.panel1.Controls.Add(this.czerwony);
-            this.panel1.Controls.Add(this.czarny);
+            this.panel1.Controls.Add(this.wybrany);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(79, 537);
             this.panel1.TabIndex = 0;
             // 
-            // czarny
+            // wybrany
             // 
-            this.czarny.BackColor = System.Drawing.Color.Black;
-            this.czarny.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.czarny.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.czarny.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.czarny.Location = new System.Drawing.Point(3, 3);
-            this.czarny.Name = "czarny";
-            this.czarny.Size = new System.Drawing.Size(31, 32);
-            this.czarny.TabIndex = 0;
-            this.czarny.TabStop = false;
+            this.wybrany.BackColor = System.Drawing.Color.Black;
+            this.wybrany.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.wybrany.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.wybrany.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.wybrany.Location = new System.Drawing.Point(3, 3);
+            this.wybrany.Name = "wybrany";
+            this.wybrany.Size = new System.Drawing.Size(31, 32);
+            this.wybrany.TabIndex = 0;
+            this.wybrany.TabStop = false;
             // 
             // bialy
             // 
             this.bialy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.bialy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bialy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bialy.Location = new System.Drawing.Point(40, 3);
+            this.bialy.Location = new System.Drawing.Point(40, 193);
             this.bialy.Name = "bialy";
             this.bialy.Size = new System.Drawing.Size(33, 32);
             this.bialy.TabIndex = 1;
             this.bialy.TabStop = false;
+            this.bialy.Click += new System.EventHandler(this.bialy_Click);
             // 
             // niebieski
             // 
@@ -105,6 +109,7 @@
             this.niebieski.Size = new System.Drawing.Size(33, 32);
             this.niebieski.TabIndex = 3;
             this.niebieski.TabStop = false;
+            this.niebieski.Click += new System.EventHandler(this.niebieski_Click);
             // 
             // czerwony
             // 
@@ -117,6 +122,7 @@
             this.czerwony.Size = new System.Drawing.Size(31, 32);
             this.czerwony.TabIndex = 2;
             this.czerwony.TabStop = false;
+            this.czerwony.Click += new System.EventHandler(this.czerwony_Click);
             // 
             // zolty
             // 
@@ -129,6 +135,7 @@
             this.zolty.Size = new System.Drawing.Size(33, 32);
             this.zolty.TabIndex = 5;
             this.zolty.TabStop = false;
+            this.zolty.Click += new System.EventHandler(this.zolty_Click);
             // 
             // zielony
             // 
@@ -141,6 +148,7 @@
             this.zielony.Size = new System.Drawing.Size(31, 32);
             this.zielony.TabIndex = 4;
             this.zielony.TabStop = false;
+            this.zielony.Click += new System.EventHandler(this.zielony_Click);
             // 
             // brozowy
             // 
@@ -153,6 +161,7 @@
             this.brozowy.Size = new System.Drawing.Size(33, 32);
             this.brozowy.TabIndex = 3;
             this.brozowy.TabStop = false;
+            this.brozowy.Click += new System.EventHandler(this.brozowy_Click);
             // 
             // rozowy
             // 
@@ -165,6 +174,7 @@
             this.rozowy.Size = new System.Drawing.Size(31, 32);
             this.rozowy.TabIndex = 2;
             this.rozowy.TabStop = false;
+            this.rozowy.Click += new System.EventHandler(this.rozowy_Click);
             // 
             // pomaranczowy
             // 
@@ -177,6 +187,7 @@
             this.pomaranczowy.Size = new System.Drawing.Size(33, 32);
             this.pomaranczowy.TabIndex = 3;
             this.pomaranczowy.TabStop = false;
+            this.pomaranczowy.Click += new System.EventHandler(this.pomaranczowy_Click);
             // 
             // fioletowy
             // 
@@ -189,6 +200,20 @@
             this.fioletowy.Size = new System.Drawing.Size(31, 32);
             this.fioletowy.TabIndex = 2;
             this.fioletowy.TabStop = false;
+            this.fioletowy.Click += new System.EventHandler(this.fioletowy_Click);
+            // 
+            // czarny
+            // 
+            this.czarny.BackColor = System.Drawing.Color.Black;
+            this.czarny.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.czarny.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.czarny.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.czarny.Location = new System.Drawing.Point(3, 193);
+            this.czarny.Name = "czarny";
+            this.czarny.Size = new System.Drawing.Size(31, 32);
+            this.czarny.TabIndex = 3;
+            this.czarny.TabStop = false;
+            this.czarny.Click += new System.EventHandler(this.czarny_Click);
             // 
             // Form1
             // 
@@ -205,7 +230,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.czarny)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wybrany)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bialy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.niebieski)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.czerwony)).EndInit();
@@ -215,6 +240,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.rozowy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pomaranczowy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fioletowy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.czarny)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -231,6 +257,7 @@
         private System.Windows.Forms.PictureBox niebieski;
         private System.Windows.Forms.PictureBox bialy;
         private System.Windows.Forms.PictureBox czerwony;
+        private System.Windows.Forms.PictureBox wybrany;
         private System.Windows.Forms.PictureBox czarny;
     }
 }
