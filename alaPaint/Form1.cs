@@ -91,17 +91,26 @@ namespace alaPaint
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-
+            pt = e.Location;
+            if (e.Button == MouseButtons.Left)
+                i = 1;
         }
 
         private void Form1_MouseUp(object sender, MouseEventArgs e)
         {
-
+            i = 0;
         }
 
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
+            if (i == 1)
+            {
+                pt2 = e.Location;
+                g = this.CreateGraphics();
+                g.DrawLine(p, pt, pt2);
+            }
 
+            pt = pt2;
         }
     }
 }
