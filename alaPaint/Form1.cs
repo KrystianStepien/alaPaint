@@ -90,17 +90,13 @@ namespace alaPaint
 
         #region Rysowanie
 
-        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+
+        private void pictureBox1_MouseDown_1(object sender, MouseEventArgs e)
         {
             pt = e.Location;
         }
 
-        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        private void pictureBox1_MouseMove_1(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
@@ -109,7 +105,6 @@ namespace alaPaint
                 pt = pt2;
             }
         }
-
 
         #endregion Rysowanie
 
