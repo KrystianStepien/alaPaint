@@ -130,7 +130,7 @@ namespace alaPaint
             f.Filter = "plik graficzny(*.jpg)|*.jpg";
 
             if(f.ShowDialog() == DialogResult.OK)
-            {
+            { 
                 pictureBox1.Image.Save("", System.Drawing.Imaging.ImageFormat.Jpeg);
             }
         }
