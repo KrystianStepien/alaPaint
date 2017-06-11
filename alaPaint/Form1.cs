@@ -98,6 +98,16 @@ namespace alaPaint
         private void pictureBox1_MouseDown_1(object sender, MouseEventArgs e)
         {
             pt = e.Location;
+            if (r1.Checked)
+                p.Width = 1;
+            else if (r2.Checked)
+                p.Width = 2;
+            else if (r3.Checked)
+                p.Width = 3;
+            else if (r4.Checked)
+                p.Width = 4;
+            else if (r5.Checked)
+                p.Width = 5;
         }
 
         private void pictureBox1_MouseMove_1(object sender, MouseEventArgs e)

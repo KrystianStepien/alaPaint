@@ -53,14 +53,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.rozmiar1 = new System.Windows.Forms.PictureBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.r1 = new System.Windows.Forms.RadioButton();
+            this.r2 = new System.Windows.Forms.RadioButton();
             this.rozmiar2 = new System.Windows.Forms.PictureBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.r3 = new System.Windows.Forms.RadioButton();
             this.rozmiar3 = new System.Windows.Forms.PictureBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.r4 = new System.Windows.Forms.RadioButton();
             this.rozmiar4 = new System.Windows.Forms.PictureBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.r5 = new System.Windows.Forms.RadioButton();
             this.rozmiar5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.czarny)).BeginInit();
@@ -87,15 +87,15 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.radioButton5);
+            this.panel1.Controls.Add(this.r5);
             this.panel1.Controls.Add(this.rozmiar5);
-            this.panel1.Controls.Add(this.radioButton4);
+            this.panel1.Controls.Add(this.r4);
             this.panel1.Controls.Add(this.rozmiar4);
-            this.panel1.Controls.Add(this.radioButton3);
+            this.panel1.Controls.Add(this.r3);
             this.panel1.Controls.Add(this.rozmiar3);
-            this.panel1.Controls.Add(this.radioButton2);
+            this.panel1.Controls.Add(this.r2);
             this.panel1.Controls.Add(this.rozmiar2);
-            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.r1);
             this.panel1.Controls.Add(this.rozmiar1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label4);
@@ -373,25 +373,25 @@
             this.rozmiar1.TabStop = false;
             this.rozmiar1.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // radioButton1
+            // r1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(3, 319);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(14, 13);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.r1.AutoSize = true;
+            this.r1.Location = new System.Drawing.Point(3, 319);
+            this.r1.Name = "r1";
+            this.r1.Size = new System.Drawing.Size(14, 13);
+            this.r1.TabIndex = 4;
+            this.r1.TabStop = true;
+            this.r1.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // r2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(3, 338);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(14, 13);
-            this.radioButton2.TabIndex = 9;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.r2.AutoSize = true;
+            this.r2.Location = new System.Drawing.Point(3, 338);
+            this.r2.Name = "r2";
+            this.r2.Size = new System.Drawing.Size(14, 13);
+            this.r2.TabIndex = 9;
+            this.r2.TabStop = true;
+            this.r2.UseVisualStyleBackColor = true;
             // 
             // rozmiar2
             // 
@@ -402,15 +402,15 @@
             this.rozmiar2.TabIndex = 10;
             this.rozmiar2.TabStop = false;
             // 
-            // radioButton3
+            // r3
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(3, 357);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(14, 13);
-            this.radioButton3.TabIndex = 9;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.r3.AutoSize = true;
+            this.r3.Location = new System.Drawing.Point(3, 357);
+            this.r3.Name = "r3";
+            this.r3.Size = new System.Drawing.Size(14, 13);
+            this.r3.TabIndex = 9;
+            this.r3.TabStop = true;
+            this.r3.UseVisualStyleBackColor = true;
             // 
             // rozmiar3
             // 
@@ -421,15 +421,15 @@
             this.rozmiar3.TabIndex = 10;
             this.rozmiar3.TabStop = false;
             // 
-            // radioButton4
+            // r4
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(3, 376);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(14, 13);
-            this.radioButton4.TabIndex = 9;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.r4.AutoSize = true;
+            this.r4.Location = new System.Drawing.Point(3, 376);
+            this.r4.Name = "r4";
+            this.r4.Size = new System.Drawing.Size(14, 13);
+            this.r4.TabIndex = 9;
+            this.r4.TabStop = true;
+            this.r4.UseVisualStyleBackColor = true;
             // 
             // rozmiar4
             // 
@@ -440,15 +440,15 @@
             this.rozmiar4.TabIndex = 10;
             this.rozmiar4.TabStop = false;
             // 
-            // radioButton5
+            // r5
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(3, 395);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(14, 13);
-            this.radioButton5.TabIndex = 9;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.r5.AutoSize = true;
+            this.r5.Location = new System.Drawing.Point(3, 395);
+            this.r5.Name = "r5";
+            this.r5.Size = new System.Drawing.Size(14, 13);
+            this.r5.TabIndex = 9;
+            this.r5.TabStop = true;
+            this.r5.UseVisualStyleBackColor = true;
             // 
             // rozmiar5
             // 
@@ -528,15 +528,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton r5;
         private System.Windows.Forms.PictureBox rozmiar5;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton r4;
         private System.Windows.Forms.PictureBox rozmiar4;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton r3;
         private System.Windows.Forms.PictureBox rozmiar3;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton r2;
         private System.Windows.Forms.PictureBox rozmiar2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton r1;
     }
 }
 
