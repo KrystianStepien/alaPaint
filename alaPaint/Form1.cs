@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +14,7 @@ namespace alaPaint
 {
     public partial class Form1 : Form
     {
+
         Image Plik;
         string sciezka = "";
         Graphics g;
@@ -23,6 +26,7 @@ namespace alaPaint
         {
             InitializeComponent();
             g = pictureBox1.CreateGraphics();
+            pictureBox1.Image = new Bitmap(pictureBox1.Width, pictureBox1.Height);
         }
         #region Kolory
         private void czerwony_Click(object sender, EventArgs e)
@@ -118,6 +122,33 @@ namespace alaPaint
                 Plik = Image.FromFile(f.FileName);
                 pictureBox1.Image = Plik;
             }
+        }
+
+        private void zapiszToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog f = new SaveFileDialog();
+            f.Filter = "plik graficzny(*.jpg)|*.jpg";
+
+            if(f.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image.Save("", System.Drawing.Imaging.ImageFormat.Jpeg);
+            }
+        }
+
+        private void zapiszJakoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog f = new SaveFileDialog();
+            f.Filter = "plik graficzny(*.Jpeg)|*.Jpeg";
+
+            if (f.ShowDialog() == DialogResult.OK)
+            {
+                Plik.Save(f.FileName);
+            }
+        }
+
+        private void zapiszToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            pictureBox1.Image.Save(@"C:\Users\Krystian\Desktop\test.jpg", ImageFormat.Jpeg);
         }
     }
 }
