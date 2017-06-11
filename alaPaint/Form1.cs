@@ -14,13 +14,13 @@ namespace alaPaint
     {
         Graphics g;
         Pen p = new Pen(Color.Black,1);
-        Point pt = new Point(0, 0);
-        Point pt2 = new Point(0, 0);
-        int i = 0;
+        Point pt = new Point();
+        Point pt2 = new Point();
 
         public Form1()
         {
             InitializeComponent();
+            g = panel2.CreateGraphics();
         }
 
         private void czerwony_Click(object sender, EventArgs e)
@@ -84,33 +84,25 @@ namespace alaPaint
             wybrany.BackColor = czarny.BackColor;
         }
 
-        private void Form1_MouseEnter(object sender, EventArgs e)
-        {
 
-        }
-
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        private void panel2_MouseMove(object sender, MouseEventArgs e)
         {
-            pt = e.Location;
-            if (e.Button == MouseButtons.Left)
-                i = 1;
-        }
-
-        private void Form1_MouseUp(object sender, MouseEventArgs e)
-        {
-            i = 0;
-        }
-
-        private void Form1_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (i == 1)
+            if (e.Button==MouseButtons.Left)
             {
                 pt2 = e.Location;
-                g = this.CreateGraphics();
                 g.DrawLine(p, pt, pt2);
+                pt = pt2;
             }
+        }
 
-            pt = pt2;
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            pt = e.Location;
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
