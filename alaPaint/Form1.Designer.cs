@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.wybrany = new System.Windows.Forms.PictureBox();
-            this.bialy = new System.Windows.Forms.PictureBox();
-            this.niebieski = new System.Windows.Forms.PictureBox();
-            this.czerwony = new System.Windows.Forms.PictureBox();
-            this.zolty = new System.Windows.Forms.PictureBox();
-            this.zielony = new System.Windows.Forms.PictureBox();
-            this.brozowy = new System.Windows.Forms.PictureBox();
-            this.rozowy = new System.Windows.Forms.PictureBox();
-            this.pomaranczowy = new System.Windows.Forms.PictureBox();
-            this.fioletowy = new System.Windows.Forms.PictureBox();
             this.czarny = new System.Windows.Forms.PictureBox();
+            this.pomaranczowy = new System.Windows.Forms.PictureBox();
+            this.brozowy = new System.Windows.Forms.PictureBox();
+            this.fioletowy = new System.Windows.Forms.PictureBox();
+            this.zolty = new System.Windows.Forms.PictureBox();
+            this.rozowy = new System.Windows.Forms.PictureBox();
+            this.zielony = new System.Windows.Forms.PictureBox();
+            this.niebieski = new System.Windows.Forms.PictureBox();
+            this.bialy = new System.Windows.Forms.PictureBox();
+            this.czerwony = new System.Windows.Forms.PictureBox();
+            this.wybrany = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.wybrany)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bialy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.niebieski)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.czerwony)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zolty)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zielony)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.brozowy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rozowy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pomaranczowy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fioletowy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.czarny)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pomaranczowy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.brozowy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fioletowy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zolty)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozowy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zielony)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.niebieski)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bialy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.czerwony)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wybrany)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,107 +74,18 @@
             this.panel1.Size = new System.Drawing.Size(79, 537);
             this.panel1.TabIndex = 0;
             // 
-            // wybrany
+            // czarny
             // 
-            this.wybrany.BackColor = System.Drawing.Color.Black;
-            this.wybrany.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.wybrany.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.wybrany.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.wybrany.Location = new System.Drawing.Point(3, 3);
-            this.wybrany.Name = "wybrany";
-            this.wybrany.Size = new System.Drawing.Size(31, 32);
-            this.wybrany.TabIndex = 0;
-            this.wybrany.TabStop = false;
-            // 
-            // bialy
-            // 
-            this.bialy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bialy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bialy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bialy.Location = new System.Drawing.Point(40, 193);
-            this.bialy.Name = "bialy";
-            this.bialy.Size = new System.Drawing.Size(33, 32);
-            this.bialy.TabIndex = 1;
-            this.bialy.TabStop = false;
-            this.bialy.Click += new System.EventHandler(this.bialy_Click);
-            // 
-            // niebieski
-            // 
-            this.niebieski.BackColor = System.Drawing.Color.Blue;
-            this.niebieski.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.niebieski.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.niebieski.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.niebieski.Location = new System.Drawing.Point(40, 41);
-            this.niebieski.Name = "niebieski";
-            this.niebieski.Size = new System.Drawing.Size(33, 32);
-            this.niebieski.TabIndex = 3;
-            this.niebieski.TabStop = false;
-            this.niebieski.Click += new System.EventHandler(this.niebieski_Click);
-            // 
-            // czerwony
-            // 
-            this.czerwony.BackColor = System.Drawing.Color.Red;
-            this.czerwony.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.czerwony.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.czerwony.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.czerwony.Location = new System.Drawing.Point(3, 41);
-            this.czerwony.Name = "czerwony";
-            this.czerwony.Size = new System.Drawing.Size(31, 32);
-            this.czerwony.TabIndex = 2;
-            this.czerwony.TabStop = false;
-            this.czerwony.Click += new System.EventHandler(this.czerwony_Click);
-            // 
-            // zolty
-            // 
-            this.zolty.BackColor = System.Drawing.Color.Yellow;
-            this.zolty.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.zolty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.zolty.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.zolty.Location = new System.Drawing.Point(40, 79);
-            this.zolty.Name = "zolty";
-            this.zolty.Size = new System.Drawing.Size(33, 32);
-            this.zolty.TabIndex = 5;
-            this.zolty.TabStop = false;
-            this.zolty.Click += new System.EventHandler(this.zolty_Click);
-            // 
-            // zielony
-            // 
-            this.zielony.BackColor = System.Drawing.Color.Green;
-            this.zielony.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.zielony.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.zielony.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.zielony.Location = new System.Drawing.Point(3, 79);
-            this.zielony.Name = "zielony";
-            this.zielony.Size = new System.Drawing.Size(31, 32);
-            this.zielony.TabIndex = 4;
-            this.zielony.TabStop = false;
-            this.zielony.Click += new System.EventHandler(this.zielony_Click);
-            // 
-            // brozowy
-            // 
-            this.brozowy.BackColor = System.Drawing.Color.Brown;
-            this.brozowy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.brozowy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.brozowy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.brozowy.Location = new System.Drawing.Point(40, 117);
-            this.brozowy.Name = "brozowy";
-            this.brozowy.Size = new System.Drawing.Size(33, 32);
-            this.brozowy.TabIndex = 3;
-            this.brozowy.TabStop = false;
-            this.brozowy.Click += new System.EventHandler(this.brozowy_Click);
-            // 
-            // rozowy
-            // 
-            this.rozowy.BackColor = System.Drawing.Color.Pink;
-            this.rozowy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.rozowy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rozowy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rozowy.Location = new System.Drawing.Point(3, 117);
-            this.rozowy.Name = "rozowy";
-            this.rozowy.Size = new System.Drawing.Size(31, 32);
-            this.rozowy.TabIndex = 2;
-            this.rozowy.TabStop = false;
-            this.rozowy.Click += new System.EventHandler(this.rozowy_Click);
+            this.czarny.BackColor = System.Drawing.Color.Black;
+            this.czarny.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.czarny.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.czarny.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.czarny.Location = new System.Drawing.Point(3, 193);
+            this.czarny.Name = "czarny";
+            this.czarny.Size = new System.Drawing.Size(31, 32);
+            this.czarny.TabIndex = 3;
+            this.czarny.TabStop = false;
+            this.czarny.Click += new System.EventHandler(this.czarny_Click);
             // 
             // pomaranczowy
             // 
@@ -189,6 +100,19 @@
             this.pomaranczowy.TabStop = false;
             this.pomaranczowy.Click += new System.EventHandler(this.pomaranczowy_Click);
             // 
+            // brozowy
+            // 
+            this.brozowy.BackColor = System.Drawing.Color.Brown;
+            this.brozowy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.brozowy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.brozowy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.brozowy.Location = new System.Drawing.Point(40, 117);
+            this.brozowy.Name = "brozowy";
+            this.brozowy.Size = new System.Drawing.Size(33, 32);
+            this.brozowy.TabIndex = 3;
+            this.brozowy.TabStop = false;
+            this.brozowy.Click += new System.EventHandler(this.brozowy_Click);
+            // 
             // fioletowy
             // 
             this.fioletowy.BackColor = System.Drawing.Color.Purple;
@@ -202,18 +126,94 @@
             this.fioletowy.TabStop = false;
             this.fioletowy.Click += new System.EventHandler(this.fioletowy_Click);
             // 
-            // czarny
+            // zolty
             // 
-            this.czarny.BackColor = System.Drawing.Color.Black;
-            this.czarny.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.czarny.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.czarny.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.czarny.Location = new System.Drawing.Point(3, 193);
-            this.czarny.Name = "czarny";
-            this.czarny.Size = new System.Drawing.Size(31, 32);
-            this.czarny.TabIndex = 3;
-            this.czarny.TabStop = false;
-            this.czarny.Click += new System.EventHandler(this.czarny_Click);
+            this.zolty.BackColor = System.Drawing.Color.Yellow;
+            this.zolty.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.zolty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.zolty.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.zolty.Location = new System.Drawing.Point(40, 79);
+            this.zolty.Name = "zolty";
+            this.zolty.Size = new System.Drawing.Size(33, 32);
+            this.zolty.TabIndex = 5;
+            this.zolty.TabStop = false;
+            this.zolty.Click += new System.EventHandler(this.zolty_Click);
+            // 
+            // rozowy
+            // 
+            this.rozowy.BackColor = System.Drawing.Color.Pink;
+            this.rozowy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rozowy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rozowy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rozowy.Location = new System.Drawing.Point(3, 117);
+            this.rozowy.Name = "rozowy";
+            this.rozowy.Size = new System.Drawing.Size(31, 32);
+            this.rozowy.TabIndex = 2;
+            this.rozowy.TabStop = false;
+            this.rozowy.Click += new System.EventHandler(this.rozowy_Click);
+            // 
+            // zielony
+            // 
+            this.zielony.BackColor = System.Drawing.Color.Green;
+            this.zielony.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.zielony.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.zielony.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.zielony.Location = new System.Drawing.Point(3, 79);
+            this.zielony.Name = "zielony";
+            this.zielony.Size = new System.Drawing.Size(31, 32);
+            this.zielony.TabIndex = 4;
+            this.zielony.TabStop = false;
+            this.zielony.Click += new System.EventHandler(this.zielony_Click);
+            // 
+            // niebieski
+            // 
+            this.niebieski.BackColor = System.Drawing.Color.Blue;
+            this.niebieski.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.niebieski.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.niebieski.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.niebieski.Location = new System.Drawing.Point(40, 41);
+            this.niebieski.Name = "niebieski";
+            this.niebieski.Size = new System.Drawing.Size(33, 32);
+            this.niebieski.TabIndex = 3;
+            this.niebieski.TabStop = false;
+            this.niebieski.Click += new System.EventHandler(this.niebieski_Click);
+            // 
+            // bialy
+            // 
+            this.bialy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bialy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bialy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bialy.Location = new System.Drawing.Point(40, 193);
+            this.bialy.Name = "bialy";
+            this.bialy.Size = new System.Drawing.Size(33, 32);
+            this.bialy.TabIndex = 1;
+            this.bialy.TabStop = false;
+            this.bialy.Click += new System.EventHandler(this.bialy_Click);
+            // 
+            // czerwony
+            // 
+            this.czerwony.BackColor = System.Drawing.Color.Red;
+            this.czerwony.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.czerwony.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.czerwony.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.czerwony.Location = new System.Drawing.Point(3, 41);
+            this.czerwony.Name = "czerwony";
+            this.czerwony.Size = new System.Drawing.Size(31, 32);
+            this.czerwony.TabIndex = 2;
+            this.czerwony.TabStop = false;
+            this.czerwony.Click += new System.EventHandler(this.czerwony_Click);
+            // 
+            // wybrany
+            // 
+            this.wybrany.BackColor = System.Drawing.Color.Black;
+            this.wybrany.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.wybrany.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.wybrany.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.wybrany.Location = new System.Drawing.Point(3, 3);
+            this.wybrany.Name = "wybrany";
+            this.wybrany.Size = new System.Drawing.Size(31, 32);
+            this.wybrany.TabIndex = 0;
+            this.wybrany.TabStop = false;
             // 
             // Form1
             // 
@@ -229,18 +229,21 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.wybrany)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bialy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.niebieski)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.czerwony)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zolty)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zielony)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.brozowy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rozowy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pomaranczowy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fioletowy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.czarny)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pomaranczowy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.brozowy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fioletowy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zolty)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozowy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zielony)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.niebieski)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bialy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.czerwony)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wybrany)).EndInit();
             this.ResumeLayout(false);
 
         }

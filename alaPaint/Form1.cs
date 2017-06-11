@@ -83,5 +83,25 @@ namespace alaPaint
             p.Color = czarny.BackColor;
             wybrany.BackColor = czarny.BackColor;
         }
+
+        private void Form1_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
