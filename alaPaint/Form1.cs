@@ -12,6 +12,8 @@ namespace alaPaint
 {
     public partial class Form1 : Form
     {
+        Image Plik;
+        string sciezka = "";
         Graphics g;
         Pen p = new Pen(Color.Black,1);
         Point pt = new Point();
@@ -20,9 +22,9 @@ namespace alaPaint
         public Form1()
         {
             InitializeComponent();
-            g = panel2.CreateGraphics();
+            g = pictureBox1.CreateGraphics();
         }
-
+        #region Kolory
         private void czerwony_Click(object sender, EventArgs e)
         {
             p.Color = czerwony.BackColor;
@@ -84,10 +86,23 @@ namespace alaPaint
             wybrany.BackColor = czarny.BackColor;
         }
 
+        #endregion Kolory
 
-        private void panel2_MouseMove(object sender, MouseEventArgs e)
+        #region Rysowanie
+
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button==MouseButtons.Left)
+            pt = e.Location;
+        }
+
+        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
             {
                 pt2 = e.Location;
                 g.DrawLine(p, pt, pt2);
@@ -95,14 +110,19 @@ namespace alaPaint
             }
         }
 
-        private void panel2_MouseDown(object sender, MouseEventArgs e)
-        {
-            pt = e.Location;
-        }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
+        #endregion Rysowanie
 
+        private void otwórzToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog f = new OpenFileDialog();
+            f.Filter = "plik graficzny(*.jpg)|*.jpg";
+
+            if (f.ShowDialog() == DialogResult.OK)
+            {
+                Plik = Image.FromFile(f.FileName);
+                pictureBox1.Image = Plik;
+            }
         }
     }
 }
