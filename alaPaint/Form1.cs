@@ -112,6 +112,7 @@ namespace alaPaint
 
         #endregion Rysowanie
 
+        #region Menu
         private void otwórzToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog f = new OpenFileDialog();
@@ -124,31 +125,16 @@ namespace alaPaint
             }
         }
 
-        private void zapiszToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog f = new SaveFileDialog();
-            f.Filter = "plik graficzny(*.jpg)|*.jpg";
-
-            if(f.ShowDialog() == DialogResult.OK)
-            { 
-                pictureBox1.Image.Save("", System.Drawing.Imaging.ImageFormat.Jpeg);
-            }
-        }
-
-        private void zapiszJakoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog f = new SaveFileDialog();
-            f.Filter = "plik graficzny(*.Jpeg)|*.Jpeg";
-
-            if (f.ShowDialog() == DialogResult.OK)
-            {
-                Plik.Save(f.FileName);
-            }
-        }
-
         private void zapiszToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             pictureBox1.Image.Save(@"C:\Users\Krystian\Desktop\test.jpg", ImageFormat.Jpeg);
         }
+
+        private void zamknijToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        #endregion Menu
+
     }
 }
