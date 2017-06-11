@@ -134,7 +134,14 @@ namespace alaPaint
         {
             this.Close();
         }
+
+
+
         #endregion Menu
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

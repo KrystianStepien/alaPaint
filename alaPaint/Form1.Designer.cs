@@ -44,11 +44,24 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.plikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otwórzToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.zapiszToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.zamknijToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.rozmiar1 = new System.Windows.Forms.PictureBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rozmiar2 = new System.Windows.Forms.PictureBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.rozmiar3 = new System.Windows.Forms.PictureBox();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.rozmiar4 = new System.Windows.Forms.PictureBox();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.rozmiar5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.czarny)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pomaranczowy)).BeginInit();
@@ -63,12 +76,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.wybrany)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.radioButton5);
+            this.panel1.Controls.Add(this.rozmiar5);
+            this.panel1.Controls.Add(this.radioButton4);
+            this.panel1.Controls.Add(this.rozmiar4);
+            this.panel1.Controls.Add(this.radioButton3);
+            this.panel1.Controls.Add(this.rozmiar3);
+            this.panel1.Controls.Add(this.radioButton2);
+            this.panel1.Controls.Add(this.rozmiar2);
+            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.rozmiar1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.czarny);
             this.panel1.Controls.Add(this.pomaranczowy);
             this.panel1.Controls.Add(this.brozowy);
@@ -82,7 +114,7 @@
             this.panel1.Controls.Add(this.wybrany);
             this.panel1.Location = new System.Drawing.Point(12, 41);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(79, 508);
+            this.panel1.Size = new System.Drawing.Size(73, 508);
             this.panel1.TabIndex = 0;
             // 
             // czarny
@@ -91,9 +123,9 @@
             this.czarny.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.czarny.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.czarny.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.czarny.Location = new System.Drawing.Point(3, 193);
+            this.czarny.Location = new System.Drawing.Point(3, 254);
             this.czarny.Name = "czarny";
-            this.czarny.Size = new System.Drawing.Size(31, 32);
+            this.czarny.Size = new System.Drawing.Size(30, 30);
             this.czarny.TabIndex = 3;
             this.czarny.TabStop = false;
             this.czarny.Click += new System.EventHandler(this.czarny_Click);
@@ -104,9 +136,9 @@
             this.pomaranczowy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pomaranczowy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pomaranczowy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pomaranczowy.Location = new System.Drawing.Point(40, 155);
+            this.pomaranczowy.Location = new System.Drawing.Point(38, 216);
             this.pomaranczowy.Name = "pomaranczowy";
-            this.pomaranczowy.Size = new System.Drawing.Size(33, 32);
+            this.pomaranczowy.Size = new System.Drawing.Size(30, 30);
             this.pomaranczowy.TabIndex = 3;
             this.pomaranczowy.TabStop = false;
             this.pomaranczowy.Click += new System.EventHandler(this.pomaranczowy_Click);
@@ -117,9 +149,9 @@
             this.brozowy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.brozowy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.brozowy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.brozowy.Location = new System.Drawing.Point(40, 117);
+            this.brozowy.Location = new System.Drawing.Point(38, 178);
             this.brozowy.Name = "brozowy";
-            this.brozowy.Size = new System.Drawing.Size(33, 32);
+            this.brozowy.Size = new System.Drawing.Size(30, 30);
             this.brozowy.TabIndex = 3;
             this.brozowy.TabStop = false;
             this.brozowy.Click += new System.EventHandler(this.brozowy_Click);
@@ -130,9 +162,9 @@
             this.fioletowy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.fioletowy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.fioletowy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.fioletowy.Location = new System.Drawing.Point(3, 155);
+            this.fioletowy.Location = new System.Drawing.Point(3, 216);
             this.fioletowy.Name = "fioletowy";
-            this.fioletowy.Size = new System.Drawing.Size(31, 32);
+            this.fioletowy.Size = new System.Drawing.Size(30, 30);
             this.fioletowy.TabIndex = 2;
             this.fioletowy.TabStop = false;
             this.fioletowy.Click += new System.EventHandler(this.fioletowy_Click);
@@ -143,9 +175,9 @@
             this.zolty.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.zolty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.zolty.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.zolty.Location = new System.Drawing.Point(40, 79);
+            this.zolty.Location = new System.Drawing.Point(38, 140);
             this.zolty.Name = "zolty";
-            this.zolty.Size = new System.Drawing.Size(33, 32);
+            this.zolty.Size = new System.Drawing.Size(30, 30);
             this.zolty.TabIndex = 5;
             this.zolty.TabStop = false;
             this.zolty.Click += new System.EventHandler(this.zolty_Click);
@@ -156,9 +188,9 @@
             this.rozowy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.rozowy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rozowy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rozowy.Location = new System.Drawing.Point(3, 117);
+            this.rozowy.Location = new System.Drawing.Point(3, 178);
             this.rozowy.Name = "rozowy";
-            this.rozowy.Size = new System.Drawing.Size(31, 32);
+            this.rozowy.Size = new System.Drawing.Size(30, 30);
             this.rozowy.TabIndex = 2;
             this.rozowy.TabStop = false;
             this.rozowy.Click += new System.EventHandler(this.rozowy_Click);
@@ -169,9 +201,9 @@
             this.zielony.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.zielony.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.zielony.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.zielony.Location = new System.Drawing.Point(3, 79);
+            this.zielony.Location = new System.Drawing.Point(3, 140);
             this.zielony.Name = "zielony";
-            this.zielony.Size = new System.Drawing.Size(31, 32);
+            this.zielony.Size = new System.Drawing.Size(30, 30);
             this.zielony.TabIndex = 4;
             this.zielony.TabStop = false;
             this.zielony.Click += new System.EventHandler(this.zielony_Click);
@@ -182,9 +214,9 @@
             this.niebieski.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.niebieski.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.niebieski.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.niebieski.Location = new System.Drawing.Point(40, 41);
+            this.niebieski.Location = new System.Drawing.Point(38, 102);
             this.niebieski.Name = "niebieski";
-            this.niebieski.Size = new System.Drawing.Size(33, 32);
+            this.niebieski.Size = new System.Drawing.Size(30, 30);
             this.niebieski.TabIndex = 3;
             this.niebieski.TabStop = false;
             this.niebieski.Click += new System.EventHandler(this.niebieski_Click);
@@ -194,9 +226,9 @@
             this.bialy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.bialy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bialy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bialy.Location = new System.Drawing.Point(40, 193);
+            this.bialy.Location = new System.Drawing.Point(38, 254);
             this.bialy.Name = "bialy";
-            this.bialy.Size = new System.Drawing.Size(33, 32);
+            this.bialy.Size = new System.Drawing.Size(30, 30);
             this.bialy.TabIndex = 1;
             this.bialy.TabStop = false;
             this.bialy.Click += new System.EventHandler(this.bialy_Click);
@@ -207,9 +239,9 @@
             this.czerwony.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.czerwony.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.czerwony.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.czerwony.Location = new System.Drawing.Point(3, 41);
+            this.czerwony.Location = new System.Drawing.Point(3, 102);
             this.czerwony.Name = "czerwony";
-            this.czerwony.Size = new System.Drawing.Size(31, 32);
+            this.czerwony.Size = new System.Drawing.Size(30, 30);
             this.czerwony.TabIndex = 2;
             this.czerwony.TabStop = false;
             this.czerwony.Click += new System.EventHandler(this.czerwony_Click);
@@ -220,9 +252,9 @@
             this.wybrany.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.wybrany.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.wybrany.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.wybrany.Location = new System.Drawing.Point(3, 3);
+            this.wybrany.Location = new System.Drawing.Point(23, 46);
             this.wybrany.Name = "wybrany";
-            this.wybrany.Size = new System.Drawing.Size(31, 32);
+            this.wybrany.Size = new System.Drawing.Size(30, 30);
             this.wybrany.TabIndex = 0;
             this.wybrany.TabStop = false;
             // 
@@ -263,7 +295,7 @@
             // otwórzToolStripMenuItem
             // 
             this.otwórzToolStripMenuItem.Name = "otwórzToolStripMenuItem";
-            this.otwórzToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.otwórzToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.otwórzToolStripMenuItem.Text = "Otwórz";
             this.otwórzToolStripMenuItem.Click += new System.EventHandler(this.otwórzToolStripMenuItem_Click);
             // 
@@ -291,6 +323,142 @@
             this.zamknijToolStripMenuItem.Text = "Zamknij";
             this.zamknijToolStripMenuItem.Click += new System.EventHandler(this.zamknijToolStripMenuItem_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 20);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "wybrany";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(15, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 20);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "kolor";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(3, 296);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 20);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "rozmiar";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(11, 79);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 20);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "kolory";
+            // 
+            // rozmiar1
+            // 
+            this.rozmiar1.BackColor = System.Drawing.Color.Black;
+            this.rozmiar1.Location = new System.Drawing.Point(25, 325);
+            this.rozmiar1.Name = "rozmiar1";
+            this.rozmiar1.Size = new System.Drawing.Size(30, 1);
+            this.rozmiar1.TabIndex = 8;
+            this.rozmiar1.TabStop = false;
+            this.rozmiar1.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(3, 319);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(14, 13);
+            this.radioButton1.TabIndex = 4;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(3, 338);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(14, 13);
+            this.radioButton2.TabIndex = 9;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // rozmiar2
+            // 
+            this.rozmiar2.BackColor = System.Drawing.Color.Black;
+            this.rozmiar2.Location = new System.Drawing.Point(25, 343);
+            this.rozmiar2.Name = "rozmiar2";
+            this.rozmiar2.Size = new System.Drawing.Size(30, 2);
+            this.rozmiar2.TabIndex = 10;
+            this.rozmiar2.TabStop = false;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(3, 357);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(14, 13);
+            this.radioButton3.TabIndex = 9;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // rozmiar3
+            // 
+            this.rozmiar3.BackColor = System.Drawing.Color.Black;
+            this.rozmiar3.Location = new System.Drawing.Point(25, 362);
+            this.rozmiar3.Name = "rozmiar3";
+            this.rozmiar3.Size = new System.Drawing.Size(30, 3);
+            this.rozmiar3.TabIndex = 10;
+            this.rozmiar3.TabStop = false;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(3, 376);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(14, 13);
+            this.radioButton4.TabIndex = 9;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // rozmiar4
+            // 
+            this.rozmiar4.BackColor = System.Drawing.Color.Black;
+            this.rozmiar4.Location = new System.Drawing.Point(25, 380);
+            this.rozmiar4.Name = "rozmiar4";
+            this.rozmiar4.Size = new System.Drawing.Size(30, 4);
+            this.rozmiar4.TabIndex = 10;
+            this.rozmiar4.TabStop = false;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(3, 395);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(14, 13);
+            this.radioButton5.TabIndex = 9;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // rozmiar5
+            // 
+            this.rozmiar5.BackColor = System.Drawing.Color.Black;
+            this.rozmiar5.Location = new System.Drawing.Point(25, 399);
+            this.rozmiar5.Name = "rozmiar5";
+            this.rozmiar5.Size = new System.Drawing.Size(30, 5);
+            this.rozmiar5.TabIndex = 10;
+            this.rozmiar5.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -308,6 +476,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.czarny)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pomaranczowy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.brozowy)).EndInit();
@@ -322,6 +491,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,9 +521,22 @@
         private System.Windows.Forms.ToolStripMenuItem otwórzToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem zapiszToolStripMenuItem;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem zamknijToolStripMenuItem;
+        private System.Windows.Forms.PictureBox rozmiar1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.PictureBox rozmiar5;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.PictureBox rozmiar4;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.PictureBox rozmiar3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.PictureBox rozmiar2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
 
