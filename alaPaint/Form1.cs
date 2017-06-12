@@ -14,21 +14,27 @@ namespace alaPaint
 {
     public partial class Form1 : Form
     {
-
+        #region Zmienne;
         Image Plik;
-        string sciezka = "";
         Graphics g;
+        Graphics gg;
+        Bitmap b;
         Pen p = new Pen(Color.Black,1);
         Point pt = new Point();
         Point pt2 = new Point();
-        
+        string s = "Obraz";
+        int i = 1;
+        #endregion Zmienne;
 
         public Form1()
         {
             InitializeComponent();
             g = pictureBox1.CreateGraphics();
-            pictureBox1.Image = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            b = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             p.SetLineCap(System.Drawing.Drawing2D.LineCap.Round, System.Drawing.Drawing2D.LineCap.Round, System.Drawing.Drawing2D.DashCap.Round);
+            gg = Graphics.FromImage(b);
+            pictureBox1.BackgroundImage = b;
+            pictureBox1.BackgroundImageLayout = ImageLayout.None;
         }
         #region Kolory
         private void czerwony_Click(object sender, EventArgs e)
@@ -119,8 +125,9 @@ namespace alaPaint
             if (e.Button == MouseButtons.Left)
             {
                 pt2 = e.Location;
-                g.DrawLine(p, pt, pt2);
+                gg.DrawLine(p, pt, pt2);
                 pt = pt2;
+                pictureBox1.Invalidate();
             }
         }
 
@@ -141,7 +148,9 @@ namespace alaPaint
 
         private void zapiszToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            pictureBox1.Image.Save(@"C:\Users\Krystian\Desktop\test.jpg", ImageFormat.Jpeg);
+            b.Save(s, ImageFormat.Jpeg);
+            s+=i;
+            i++;
         }
 
         private void zamknijToolStripMenuItem_Click(object sender, EventArgs e)
