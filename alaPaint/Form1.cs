@@ -21,12 +21,14 @@ namespace alaPaint
         Pen p = new Pen(Color.Black,1);
         Point pt = new Point();
         Point pt2 = new Point();
+        
 
         public Form1()
         {
             InitializeComponent();
             g = pictureBox1.CreateGraphics();
             pictureBox1.Image = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            p.SetLineCap(System.Drawing.Drawing2D.LineCap.Round, System.Drawing.Drawing2D.LineCap.Round, System.Drawing.Drawing2D.DashCap.Round);
         }
         #region Kolory
         private void czerwony_Click(object sender, EventArgs e)
