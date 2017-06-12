@@ -108,6 +108,8 @@ namespace alaPaint
                 p.Width = 4;
             else if (r5.Checked)
                 p.Width = 5;
+            else if (rg.Checked)
+                p.Width = 30;
         }
 
         private void pictureBox1_MouseMove_1(object sender, MouseEventArgs e)
@@ -152,6 +154,14 @@ namespace alaPaint
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void gumka_Click(object sender, EventArgs e)
+        {
+            p.Color = gumka.BackColor;
+            wybrany.BackColor = gumka.BackColor;
+            rg.Checked = true;
         }
     }
 }

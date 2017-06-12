@@ -28,7 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.gumka = new System.Windows.Forms.PictureBox();
+            this.r5 = new System.Windows.Forms.RadioButton();
+            this.rozmiar5 = new System.Windows.Forms.PictureBox();
+            this.r4 = new System.Windows.Forms.RadioButton();
+            this.rozmiar4 = new System.Windows.Forms.PictureBox();
+            this.r3 = new System.Windows.Forms.RadioButton();
+            this.rozmiar3 = new System.Windows.Forms.PictureBox();
+            this.r2 = new System.Windows.Forms.RadioButton();
+            this.rozmiar2 = new System.Windows.Forms.PictureBox();
+            this.r1 = new System.Windows.Forms.RadioButton();
+            this.rozmiar1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.czarny = new System.Windows.Forms.PictureBox();
             this.pomaranczowy = new System.Windows.Forms.PictureBox();
             this.brozowy = new System.Windows.Forms.PictureBox();
@@ -48,21 +64,14 @@
             this.zapiszToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.zamknijToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.rozmiar1 = new System.Windows.Forms.PictureBox();
-            this.r1 = new System.Windows.Forms.RadioButton();
-            this.r2 = new System.Windows.Forms.RadioButton();
-            this.rozmiar2 = new System.Windows.Forms.PictureBox();
-            this.r3 = new System.Windows.Forms.RadioButton();
-            this.rozmiar3 = new System.Windows.Forms.PictureBox();
-            this.r4 = new System.Windows.Forms.RadioButton();
-            this.rozmiar4 = new System.Windows.Forms.PictureBox();
-            this.r5 = new System.Windows.Forms.RadioButton();
-            this.rozmiar5 = new System.Windows.Forms.PictureBox();
+            this.rg = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gumka)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.czarny)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pomaranczowy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.brozowy)).BeginInit();
@@ -76,17 +85,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.wybrany)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rozmiar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rozmiar2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rozmiar3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rozmiar4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rozmiar5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.gumka);
+            this.panel1.Controls.Add(this.rg);
             this.panel1.Controls.Add(this.r5);
             this.panel1.Controls.Add(this.rozmiar5);
             this.panel1.Controls.Add(this.r4);
@@ -116,6 +122,153 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(73, 508);
             this.panel1.TabIndex = 0;
+            // 
+            // gumka
+            // 
+            this.gumka.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gumka.BackgroundImage")));
+            this.gumka.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gumka.Location = new System.Drawing.Point(3, 414);
+            this.gumka.Name = "gumka";
+            this.gumka.Size = new System.Drawing.Size(57, 54);
+            this.gumka.TabIndex = 4;
+            this.gumka.TabStop = false;
+            this.gumka.Click += new System.EventHandler(this.gumka_Click);
+            // 
+            // r5
+            // 
+            this.r5.AutoSize = true;
+            this.r5.Location = new System.Drawing.Point(3, 395);
+            this.r5.Name = "r5";
+            this.r5.Size = new System.Drawing.Size(14, 13);
+            this.r5.TabIndex = 9;
+            this.r5.TabStop = true;
+            this.r5.UseVisualStyleBackColor = true;
+            // 
+            // rozmiar5
+            // 
+            this.rozmiar5.BackColor = System.Drawing.Color.Black;
+            this.rozmiar5.Location = new System.Drawing.Point(25, 399);
+            this.rozmiar5.Name = "rozmiar5";
+            this.rozmiar5.Size = new System.Drawing.Size(30, 5);
+            this.rozmiar5.TabIndex = 10;
+            this.rozmiar5.TabStop = false;
+            // 
+            // r4
+            // 
+            this.r4.AutoSize = true;
+            this.r4.Location = new System.Drawing.Point(3, 376);
+            this.r4.Name = "r4";
+            this.r4.Size = new System.Drawing.Size(14, 13);
+            this.r4.TabIndex = 9;
+            this.r4.TabStop = true;
+            this.r4.UseVisualStyleBackColor = true;
+            // 
+            // rozmiar4
+            // 
+            this.rozmiar4.BackColor = System.Drawing.Color.Black;
+            this.rozmiar4.Location = new System.Drawing.Point(25, 380);
+            this.rozmiar4.Name = "rozmiar4";
+            this.rozmiar4.Size = new System.Drawing.Size(30, 4);
+            this.rozmiar4.TabIndex = 10;
+            this.rozmiar4.TabStop = false;
+            // 
+            // r3
+            // 
+            this.r3.AutoSize = true;
+            this.r3.Location = new System.Drawing.Point(3, 357);
+            this.r3.Name = "r3";
+            this.r3.Size = new System.Drawing.Size(14, 13);
+            this.r3.TabIndex = 9;
+            this.r3.TabStop = true;
+            this.r3.UseVisualStyleBackColor = true;
+            // 
+            // rozmiar3
+            // 
+            this.rozmiar3.BackColor = System.Drawing.Color.Black;
+            this.rozmiar3.Location = new System.Drawing.Point(25, 362);
+            this.rozmiar3.Name = "rozmiar3";
+            this.rozmiar3.Size = new System.Drawing.Size(30, 3);
+            this.rozmiar3.TabIndex = 10;
+            this.rozmiar3.TabStop = false;
+            // 
+            // r2
+            // 
+            this.r2.AutoSize = true;
+            this.r2.Location = new System.Drawing.Point(3, 338);
+            this.r2.Name = "r2";
+            this.r2.Size = new System.Drawing.Size(14, 13);
+            this.r2.TabIndex = 9;
+            this.r2.TabStop = true;
+            this.r2.UseVisualStyleBackColor = true;
+            // 
+            // rozmiar2
+            // 
+            this.rozmiar2.BackColor = System.Drawing.Color.Black;
+            this.rozmiar2.Location = new System.Drawing.Point(25, 343);
+            this.rozmiar2.Name = "rozmiar2";
+            this.rozmiar2.Size = new System.Drawing.Size(30, 2);
+            this.rozmiar2.TabIndex = 10;
+            this.rozmiar2.TabStop = false;
+            // 
+            // r1
+            // 
+            this.r1.AutoSize = true;
+            this.r1.Location = new System.Drawing.Point(3, 319);
+            this.r1.Name = "r1";
+            this.r1.Size = new System.Drawing.Size(14, 13);
+            this.r1.TabIndex = 4;
+            this.r1.TabStop = true;
+            this.r1.UseVisualStyleBackColor = true;
+            // 
+            // rozmiar1
+            // 
+            this.rozmiar1.BackColor = System.Drawing.Color.Black;
+            this.rozmiar1.Location = new System.Drawing.Point(25, 325);
+            this.rozmiar1.Name = "rozmiar1";
+            this.rozmiar1.Size = new System.Drawing.Size(30, 1);
+            this.rozmiar1.TabIndex = 8;
+            this.rozmiar1.TabStop = false;
+            this.rozmiar1.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(11, 79);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 20);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "kolory";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(3, 296);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 20);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "rozmiar";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(15, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 20);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "kolor";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 20);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "wybrany";
             // 
             // czarny
             // 
@@ -261,9 +414,9 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(97, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(91, 41);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(675, 508);
+            this.pictureBox1.Size = new System.Drawing.Size(681, 508);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -295,169 +448,43 @@
             // otwórzToolStripMenuItem
             // 
             this.otwórzToolStripMenuItem.Name = "otwórzToolStripMenuItem";
-            this.otwórzToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.otwórzToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.otwórzToolStripMenuItem.Text = "Otwórz";
             this.otwórzToolStripMenuItem.Click += new System.EventHandler(this.otwórzToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(114, 6);
             // 
             // zapiszToolStripMenuItem
             // 
             this.zapiszToolStripMenuItem.Name = "zapiszToolStripMenuItem";
-            this.zapiszToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.zapiszToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.zapiszToolStripMenuItem.Text = "Zapisz";
             this.zapiszToolStripMenuItem.Click += new System.EventHandler(this.zapiszToolStripMenuItem_Click_1);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(114, 6);
             // 
             // zamknijToolStripMenuItem
             // 
             this.zamknijToolStripMenuItem.Name = "zamknijToolStripMenuItem";
-            this.zamknijToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.zamknijToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.zamknijToolStripMenuItem.Text = "Zamknij";
             this.zamknijToolStripMenuItem.Click += new System.EventHandler(this.zamknijToolStripMenuItem_Click);
             // 
-            // label2
+            // rg
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 20);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "wybrany";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(15, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 20);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "kolor";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(3, 296);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "rozmiar";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(11, 79);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 20);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "kolory";
-            // 
-            // rozmiar1
-            // 
-            this.rozmiar1.BackColor = System.Drawing.Color.Black;
-            this.rozmiar1.Location = new System.Drawing.Point(25, 325);
-            this.rozmiar1.Name = "rozmiar1";
-            this.rozmiar1.Size = new System.Drawing.Size(30, 1);
-            this.rozmiar1.TabIndex = 8;
-            this.rozmiar1.TabStop = false;
-            this.rozmiar1.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // r1
-            // 
-            this.r1.AutoSize = true;
-            this.r1.Location = new System.Drawing.Point(3, 319);
-            this.r1.Name = "r1";
-            this.r1.Size = new System.Drawing.Size(14, 13);
-            this.r1.TabIndex = 4;
-            this.r1.TabStop = true;
-            this.r1.UseVisualStyleBackColor = true;
-            // 
-            // r2
-            // 
-            this.r2.AutoSize = true;
-            this.r2.Location = new System.Drawing.Point(3, 338);
-            this.r2.Name = "r2";
-            this.r2.Size = new System.Drawing.Size(14, 13);
-            this.r2.TabIndex = 9;
-            this.r2.TabStop = true;
-            this.r2.UseVisualStyleBackColor = true;
-            // 
-            // rozmiar2
-            // 
-            this.rozmiar2.BackColor = System.Drawing.Color.Black;
-            this.rozmiar2.Location = new System.Drawing.Point(25, 343);
-            this.rozmiar2.Name = "rozmiar2";
-            this.rozmiar2.Size = new System.Drawing.Size(30, 2);
-            this.rozmiar2.TabIndex = 10;
-            this.rozmiar2.TabStop = false;
-            // 
-            // r3
-            // 
-            this.r3.AutoSize = true;
-            this.r3.Location = new System.Drawing.Point(3, 357);
-            this.r3.Name = "r3";
-            this.r3.Size = new System.Drawing.Size(14, 13);
-            this.r3.TabIndex = 9;
-            this.r3.TabStop = true;
-            this.r3.UseVisualStyleBackColor = true;
-            // 
-            // rozmiar3
-            // 
-            this.rozmiar3.BackColor = System.Drawing.Color.Black;
-            this.rozmiar3.Location = new System.Drawing.Point(25, 362);
-            this.rozmiar3.Name = "rozmiar3";
-            this.rozmiar3.Size = new System.Drawing.Size(30, 3);
-            this.rozmiar3.TabIndex = 10;
-            this.rozmiar3.TabStop = false;
-            // 
-            // r4
-            // 
-            this.r4.AutoSize = true;
-            this.r4.Location = new System.Drawing.Point(3, 376);
-            this.r4.Name = "r4";
-            this.r4.Size = new System.Drawing.Size(14, 13);
-            this.r4.TabIndex = 9;
-            this.r4.TabStop = true;
-            this.r4.UseVisualStyleBackColor = true;
-            // 
-            // rozmiar4
-            // 
-            this.rozmiar4.BackColor = System.Drawing.Color.Black;
-            this.rozmiar4.Location = new System.Drawing.Point(25, 380);
-            this.rozmiar4.Name = "rozmiar4";
-            this.rozmiar4.Size = new System.Drawing.Size(30, 4);
-            this.rozmiar4.TabIndex = 10;
-            this.rozmiar4.TabStop = false;
-            // 
-            // r5
-            // 
-            this.r5.AutoSize = true;
-            this.r5.Location = new System.Drawing.Point(3, 395);
-            this.r5.Name = "r5";
-            this.r5.Size = new System.Drawing.Size(14, 13);
-            this.r5.TabIndex = 9;
-            this.r5.TabStop = true;
-            this.r5.UseVisualStyleBackColor = true;
-            // 
-            // rozmiar5
-            // 
-            this.rozmiar5.BackColor = System.Drawing.Color.Black;
-            this.rozmiar5.Location = new System.Drawing.Point(25, 399);
-            this.rozmiar5.Name = "rozmiar5";
-            this.rozmiar5.Size = new System.Drawing.Size(30, 5);
-            this.rozmiar5.TabIndex = 10;
-            this.rozmiar5.TabStop = false;
+            this.rg.AutoSize = true;
+            this.rg.Location = new System.Drawing.Point(23, 429);
+            this.rg.Name = "rg";
+            this.rg.Size = new System.Drawing.Size(14, 13);
+            this.rg.TabIndex = 10;
+            this.rg.TabStop = true;
+            this.rg.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -477,6 +504,12 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gumka)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rozmiar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.czarny)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pomaranczowy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.brozowy)).EndInit();
@@ -491,11 +524,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rozmiar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rozmiar2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rozmiar3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rozmiar4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rozmiar5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -537,6 +565,8 @@
         private System.Windows.Forms.RadioButton r2;
         private System.Windows.Forms.PictureBox rozmiar2;
         private System.Windows.Forms.RadioButton r1;
+        private System.Windows.Forms.PictureBox gumka;
+        private System.Windows.Forms.RadioButton rg;
     }
 }
 
